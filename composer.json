@@ -1,0 +1,21 @@
+{
+    "name": "wumengshan/func",
+    "description": "方法集合",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "wumengshan6666",
+            "email": "270835786@qq.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+		"php":">=7.0.0"
+	},
+	"autoload":{
+		"psr-4":{
+			"Wumengshan\\Func\\":"src/Wumengshan/Func"
+		}
+	}
+}

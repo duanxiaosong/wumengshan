@@ -1,6 +1,6 @@
 <?php
 
-namespace wumengshan;
+namespace Wumengshan\Func;
 
 class Func
 {
@@ -9,12 +9,12 @@ class Func
     {
 
     }
-
+	
+	public static function Hello(){
+		echo 'Hello World';
+	}
     /**
      * 判断图片是否全路径
-     * author: YJQ
-     * @param $url
-     * @return bool
      */
     public static function isFullImage($url)
     {
@@ -28,9 +28,6 @@ class Func
 
     /**
      * 获取文件大小
-     * Author @YJQ@
-     * @param $filesize
-     * @return string
      */
     public static function getSize($url) {
         $filesize = strlen(file_get_contents($url));
@@ -118,9 +115,6 @@ class Func
 
     /**
      * 将图片下载到本地(微信头像保存)
-     * author: YJQ
-     * @param $url
-     * @return array|false|string
      */
     public static function download($url){
         ob_start();
@@ -141,9 +135,6 @@ class Func
 
     /**
      * 富文本版路径图片拼接全路径
-     * author: YJQ
-     * @param $content
-     * @return mixed
      */
     public static function contentImageUrl($html_content, $host)
     {
@@ -157,10 +148,6 @@ class Func
 
     /**
      * 正则匹配
-     * author: YJQ
-     * @param $l1
-     * @param $l2
-     * @return string|string[]
      */
     public static function lIIIIl($l1, $l2)
     {
@@ -220,9 +207,6 @@ class Func
 
     /**
      * 富文本提取文字
-     * author: YJQ
-     * @param $string
-     * @return string
      */
     public static function contentToText($string){
         if($string){
